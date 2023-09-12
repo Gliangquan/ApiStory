@@ -19,6 +19,7 @@
     <modules>
         <module>story-api-admin</module>
         <module>story-api-common</module>
+        <module>story-api-gateway</module>
     </modules>
 
     <properties>
