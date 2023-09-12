@@ -20,6 +20,8 @@
         <module>story-api-admin</module>
         <module>story-api-common</module>
         <module>story-api-gateway</module>
+        <module>story-api-sdk</module>
+        <module>story-api-interface</module>
     </modules>
 
     <properties>
