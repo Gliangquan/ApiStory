@@ -2,8 +2,8 @@ package com.apistory.admin.service.impl;
 
 import cn.hutool.core.util.RandomUtil;
 import cn.hutool.crypto.digest.DigestUtil;
-import com.apistory.admin.common.ErrorCode;
-import com.apistory.admin.common.exception.BusinessException;
+import com.apistory.common.exception.ErrorCode;
+import com.apistory.common.common.BusinessException;
 import com.apistory.admin.mapper.UserMapper;
 import com.apistory.admin.service.UserService;
 import com.apistory.common.model.entity.User;
@@ -22,8 +22,6 @@ import static com.apistory.admin.model.constant.UserConstant.USER_LOGIN_STATE;
 
 /**
  * 用户服务实现类
- *
- * @author yupi
  */
 @Service
 @Slf4j
@@ -36,7 +34,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
     /**
      * 盐值，混淆密码
      */
-    private static final String SALT = "yupi";
+    private static final String SALT = "story";
 
     @Override
     public long userRegister(String userAccount, String userPassword, String checkPassword) {

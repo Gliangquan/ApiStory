@@ -1,11 +1,11 @@
 package com.apistory.admin.controller;
 
 import com.apistory.admin.annotation.AuthCheck;
-import com.apistory.admin.common.BaseResponse;
+import com.apistory.common.common.BaseResponse;
 import com.apistory.admin.common.DeleteRequest;
-import com.apistory.admin.common.ErrorCode;
-import com.apistory.admin.common.ResultUtils;
-import com.apistory.admin.common.exception.BusinessException;
+import com.apistory.common.exception.ErrorCode;
+import com.apistory.common.common.ResultUtils;
+import com.apistory.common.common.BusinessException;
 import com.apistory.admin.model.constant.CommonConstant;
 import com.apistory.admin.model.dto.post.PostAddRequest;
 import com.apistory.admin.model.dto.post.PostQueryRequest;
@@ -26,8 +26,6 @@ import java.util.List;
 
 /**
  * 帖子接口
- *
- * @author yupi
  */
 @RestController
 @RequestMapping("/post")

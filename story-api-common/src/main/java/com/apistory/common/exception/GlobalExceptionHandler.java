@@ -1,17 +1,15 @@
-package com.apistory.admin.common.exception;
+package com.apistory.common.exception;
 
 
-import com.apistory.admin.common.BaseResponse;
-import com.apistory.admin.common.ErrorCode;
-import com.apistory.admin.common.ResultUtils;
+import com.apistory.common.common.BaseResponse;
+import com.apistory.common.common.BusinessException;
+import com.apistory.common.common.ResultUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 /**
  * 全局异常处理器
- *
- * @author yupi
  */
 @RestControllerAdvice
 @Slf4j

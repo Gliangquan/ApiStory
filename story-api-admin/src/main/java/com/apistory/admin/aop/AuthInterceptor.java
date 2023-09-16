@@ -1,8 +1,8 @@
 package com.apistory.admin.aop;
 
 import com.apistory.admin.annotation.AuthCheck;
-import com.apistory.admin.common.ErrorCode;
-import com.apistory.admin.common.exception.BusinessException;
+import com.apistory.common.exception.ErrorCode;
+import com.apistory.common.common.BusinessException;
 import com.apistory.admin.service.UserService;
 import com.apistory.common.model.entity.User;
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
@@ -22,9 +22,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * 权限校验 AOP
- *
- * @author yupi
+ * 权限校验 AOPi
  */
 @Aspect
 @Component

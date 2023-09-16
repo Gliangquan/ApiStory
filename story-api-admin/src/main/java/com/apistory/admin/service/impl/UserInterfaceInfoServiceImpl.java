@@ -1,7 +1,7 @@
 package com.apistory.admin.service.impl;
 
-import com.apistory.admin.common.ErrorCode;
-import com.apistory.admin.common.exception.BusinessException;
+import com.apistory.common.exception.ErrorCode;
+import com.apistory.common.common.BusinessException;
 import com.apistory.admin.mapper.UserInterfaceInfoMapper;
 import com.apistory.admin.service.UserInterfaceInfoService;
 import com.apistory.common.model.entity.UserInterfaceInfo;

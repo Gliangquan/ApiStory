@@ -1,9 +1,7 @@
-package com.apistory.admin.common;
+package com.apistory.common.exception;
 
 /**
  * 错误码
- *
- * @author yupi
  */
 public enum ErrorCode {
 

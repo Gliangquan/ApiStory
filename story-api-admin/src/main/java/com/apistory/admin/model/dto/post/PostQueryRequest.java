@@ -8,8 +8,6 @@ import java.io.Serializable;
 
 /**
  * 查询请求
- *
- * @author yupi
  */
 @EqualsAndHashCode(callSuper = true)
 @Data

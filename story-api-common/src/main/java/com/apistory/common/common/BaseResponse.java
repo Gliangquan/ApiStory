@@ -1,15 +1,10 @@
-package com.apistory.admin.common;
+package com.apistory.common.common;
 
+import com.apistory.common.exception.ErrorCode;
 import lombok.Data;
 
 import java.io.Serializable;
 
-/**
- * 通用返回类
- *
- * @param <T>
- * @author yupi
- */
 @Data
 public class BaseResponse<T> implements Serializable {
 

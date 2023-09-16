@@ -5,8 +5,6 @@ import lombok.Data;
 
 /**
  * 分页请求
- *
- * @author yupi
  */
 @Data
 public class PageRequest {

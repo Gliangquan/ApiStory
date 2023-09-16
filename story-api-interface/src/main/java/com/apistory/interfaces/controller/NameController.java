@@ -1,5 +1,7 @@
 package com.apistory.interfaces.controller;
 
+import cn.hutool.core.util.CharsetUtil;
+import cn.hutool.core.util.URLUtil;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
@@ -17,8 +19,8 @@ public class NameController {
     }
 
     @PostMapping("/post")
-    public String getNameByPost(@RequestParam String name) {
-        return "POST 你的名字是" + name;
+    public String getNameByPost(HttpServletRequest httpServletRequest) {
+        String body = URLUtil.decode(httpServletRequest.getHeader("body"), CharsetUtil.CHARSET_UTF_8);
+        return "POST 你的名字是" + body;
     }
-
 }

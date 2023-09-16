@@ -1,10 +1,10 @@
 package com.apistory.admin.controller;
 
-import com.apistory.admin.common.BaseResponse;
+import com.apistory.common.common.BaseResponse;
 import com.apistory.admin.common.DeleteRequest;
-import com.apistory.admin.common.ErrorCode;
-import com.apistory.admin.common.ResultUtils;
-import com.apistory.admin.common.exception.BusinessException;
+import com.apistory.common.exception.ErrorCode;
+import com.apistory.common.common.ResultUtils;
+import com.apistory.common.common.BusinessException;
 import com.apistory.admin.model.dto.user.*;
 import com.apistory.admin.model.vo.UserVO;
 import com.apistory.admin.service.UserService;
@@ -23,8 +23,6 @@ import java.util.stream.Collectors;
 
 /**
  * 用户接口
- *
- * @author yupi
  */
 @RestController
 @RequestMapping("/user")

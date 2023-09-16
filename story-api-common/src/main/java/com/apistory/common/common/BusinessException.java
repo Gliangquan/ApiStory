@@ -1,12 +1,10 @@
-package com.apistory.admin.common.exception;
+package com.apistory.common.common;
 
 
-import com.apistory.admin.common.ErrorCode;
+import com.apistory.common.exception.ErrorCode;
 
 /**
  * 自定义异常类
- *
- * @author yupi
  */
 public class BusinessException extends RuntimeException {
 

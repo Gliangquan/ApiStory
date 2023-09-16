@@ -1,5 +1,6 @@
 package com.apistory.admin.aop;
 
+
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -15,8 +16,6 @@ import java.util.UUID;
 
 /**
  * 请求响应日志 AOP
- *
- * @author yupi
  **/
 @Aspect
 @Component

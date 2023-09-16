@@ -39,8 +39,8 @@ public class SwaggerConfig {
         return new ApiInfoBuilder()
                 .title("鱼皮用户中心")
                 .description("鱼皮用户中心接口文档")
-                .termsOfServiceUrl("https://github.com/liyupi")
-                .contact(new Contact("yupi","https://github.com/liyupi","xxx@qq.com"))
+                .termsOfServiceUrl("https://github.com/Gliangquan")
+                .contact(new Contact("Gliangquan","https://github.com/Gliangquan","xxx@qq.com"))
                 .version("1.0")
                 .build();
     }

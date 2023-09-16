@@ -1,10 +1,9 @@
 server:
   port: 8090
+  servlet:
+    context-path: /api
 spring:
-  cloud:
-    gateway:
-      routes:
-        - id: api_route
-          uri: http://localhost:8123
-          predicates:
-            - Path=/api/**
+  profiles:
+    include: prod
+  main:
+    web-application-type: reactive # 解决web和gateway 依赖冲突问题

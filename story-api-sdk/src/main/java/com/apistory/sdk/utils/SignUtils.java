@@ -16,4 +16,11 @@ public class SignUtils {
         String content = body + "." + secretKey;
         return md5.digestHex(content);
     }
+
+    public static final String name = "权";
+    public static final String secretKey = "key";
+
+    public static void main(String[] args) {
+        System.out.println("genSign(name, secretKey) = " + genSign(name, secretKey));
+    }
 }

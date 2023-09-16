@@ -1,0 +1,22 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: api_route
+          uri: http://localhost:8123
+#          uri: http://124.220.82.79:8123
+          predicates:
+            - Path=/api/**
+  redis:
+    port: 6379
+    host: 124.220.82.79 # gxy的服务器
+    database: 5
+dubbo:
+  application:
+    name: dubbo-apistory-gateway
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    id: nacos-registry
+    address: nacos://124.220.82.79:8848/ # 4h4g 服务器

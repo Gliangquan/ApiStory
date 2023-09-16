@@ -22,6 +22,7 @@
         <module>story-api-gateway</module>
         <module>story-api-sdk</module>
         <module>story-api-interface</module>
+        <module>story-server-sdk</module>
     </modules>
 
     <properties>
@@ -31,7 +32,6 @@
     </properties>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
@@ -48,6 +48,13 @@
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
             <version>5.8.9</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
         </dependency>
 
     </dependencies>

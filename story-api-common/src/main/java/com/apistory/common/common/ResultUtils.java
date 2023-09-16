@@ -1,9 +1,9 @@
-package com.apistory.admin.common;
+package com.apistory.common.common;
+
+import com.apistory.common.exception.ErrorCode;
 
 /**
  * 返回工具类
- *
- * @author yupi
  */
 public class ResultUtils {
 

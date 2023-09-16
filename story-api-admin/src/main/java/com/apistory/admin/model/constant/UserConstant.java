@@ -2,8 +2,6 @@ package com.apistory.admin.model.constant;
 
 /**
  * 用户常量
- *
- * @author yupi
  */
 public interface UserConstant {
 

@@ -2,8 +2,6 @@ package com.apistory.admin.model.constant;
 
 /**
  * 通用常量
- *
- * @author yupi
  */
 public interface CommonConstant {
 

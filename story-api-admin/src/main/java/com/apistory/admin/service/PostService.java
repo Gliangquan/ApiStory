@@ -4,8 +4,6 @@ import com.apistory.common.model.entity.Post;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
-/**
- * @author yupili
  * @description 针对表【post(帖子)】的数据库操作Service
  */
 public interface PostService extends IService<Post> {
