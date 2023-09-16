@@ -38,6 +38,7 @@ public class ApiStorySdk {
         return map;
     }
 
+    // TODO 这里应该动态判断传入的method是什么方法，动态去发对应的请求类型！！！
     public String invokeInterface(String num, String params, String url, String method) throws UnsupportedEncodingException {
         HttpRequest httpRequest = null;
         if ("GET".equalsIgnoreCase(method)) {
