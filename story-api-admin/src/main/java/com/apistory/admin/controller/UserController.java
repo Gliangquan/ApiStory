@@ -17,9 +17,13 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import javax.servlet.AsyncContext;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import static com.apistory.admin.model.constant.UserConstant.USER_LOGIN_STATE;
 
 /**
  * 用户接口
@@ -30,8 +34,6 @@ public class UserController {
 
     @Resource
     private UserService userService;
-
-    // region 登录相关
 
     /**
      * 用户注册
@@ -98,6 +100,8 @@ public class UserController {
      */
     @GetMapping("/get/login")
     public BaseResponse<UserVO> getLoginUser(HttpServletRequest request) {
+        System.out.println("111 request.getHeader() = " + request);
+        System.out.println("222 request = " + request.getSession().getAttribute(USER_LOGIN_STATE));
         User user = userService.getLoginUser(request);
         UserVO userVO = new UserVO();
         BeanUtils.copyProperties(user, userVO);
@@ -233,5 +237,4 @@ public class UserController {
         return ResultUtils.success(userVOPage);
     }
 
-    // endregion
 }
