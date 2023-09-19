@@ -3,8 +3,8 @@ spring:
     gateway:
       routes:
         - id: api_route
-          uri: http://localhost:8123
-#          uri: http://124.220.82.79:8123
+#          uri: http://localhost:8123
+          uri: http://124.220.82.79:8123
           predicates:
             - Path=/api/**
   redis:

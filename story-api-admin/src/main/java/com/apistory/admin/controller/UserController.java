@@ -99,7 +99,7 @@ public class UserController {
      * @return
      */
     @GetMapping("/get/login")
-    public BaseResponse<UserVO> getLoginUser(HttpServletRequest request) {
+    public BaseResponse<UserVO> getLoginUser(HttpServletRequest request, HttpServletResponse response) {
         System.out.println("111 request.getHeader() = " + request);
         System.out.println("222 request = " + request.getSession().getAttribute(USER_LOGIN_STATE));
         User user = userService.getLoginUser(request);

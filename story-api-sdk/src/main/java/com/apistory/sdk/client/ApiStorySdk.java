@@ -19,7 +19,7 @@ public class ApiStorySdk {
 
     private String secretKey;
 
-    private static final String GATEWAY_HOST = "http://localhost:8090";
+    private static final String GATEWAY_HOST = "http://111.180.197.106:8090";
 
     public ApiStorySdk(String accessKey, String secretKey) {
         this.accessKey = accessKey;

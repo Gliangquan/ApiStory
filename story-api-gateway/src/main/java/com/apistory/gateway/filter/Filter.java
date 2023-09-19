@@ -65,7 +65,8 @@ public class Filter implements GlobalFilter, Ordered {
     @DubboReference
     private InnerUserInterfaceInfoService innerUserInterfaceInfoService;
 
-    private static final List<String> IP_WHITE_LIST = Arrays.asList("127.0.0.1");
+    private static final List<String> IP_WHITE_LIST =
+            Arrays.asList("127.0.0.1", "111.180.197.106");
 
     public static String nonce = "";
 
@@ -84,10 +85,10 @@ public class Filter implements GlobalFilter, Ordered {
         log.info("请求来源地址：" + request.getRemoteAddress());
         ServerHttpResponse response = exchange.getResponse();
         // 1: 访问控制 - 黑白名单
-        if (!IP_WHITE_LIST.contains(sourceAddress)) {
-            response.setStatusCode(HttpStatus.FORBIDDEN);
-            return response.setComplete();
-        }
+//        if (!IP_WHITE_LIST.contains(sourceAddress)) {
+//            response.setStatusCode(HttpStatus.FORBIDDEN);
+//            return response.setComplete();
+//        }
 
         // 2： 用户鉴权（判断 ak、sk 是否合法
         HttpHeaders headers = request.getHeaders();
